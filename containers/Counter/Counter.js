@@ -49,8 +49,8 @@ const mapDispatchToProps = dispatch => {
     return {
         onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
         onDecrementCounter: () => dispatch({type: 'DECREMENT'}),
-        onAddFiveCounter: () => dispatch({type: 'ADD_FIVE', val: 10}), //type: 'HHHH', name: 'dhdh', value: 10 -> cad be added as many properties as you want
-        onSubFiveCounter: () => dispatch({type: 'SUB_FIVE', val: 15}),
+        onAddFiveCounter: () => dispatch({type: 'ADD', val: 10}), //type: 'HHHH', name: 'dhdh', value: 10 -> cad be added as many properties as you want
+        onSubFiveCounter: () => dispatch({type: 'SUBSTRACT', val: 15}),
     }
 }
 
