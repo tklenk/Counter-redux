@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { connect  } from 'react-redux'
-import * as actionCreators from '../../store/actions'  // import { increment, decrement, add, substract, storeResult, deleteResult } from '../../store/actions'
+import * as actionCreators from '../../store/actions/index'  // import { increment, decrement, add, subtract, storeResult, deleteResult } from '../../store/actions'
 
 
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
-import * as actionTypes from '../../store/actions'
 
 class Counter extends Component {
     state = {
@@ -62,7 +61,7 @@ const mapDispatchToProps = dispatch => {
         onIncrementCounter: () => dispatch(actionCreators.increment()),
         onDecrementCounter: () => dispatch(actionCreators.decrement()),
         onAddFiveCounter: () => dispatch(actionCreators.add(10)), //type: 'HHHH', name: 'dhdh', value: 10 -> cad be added as many properties as you want
-        onSubFiveCounter: () => dispatch(actionCreators.substract(15)),
+        onSubFiveCounter: () => dispatch(actionCreators.subtract(15)),
         onStoreResult: (result) => dispatch(actionCreators.storeResult(result)),
         onDeleteResult: (id) => dispatch(actionCreators.deleteResult(id)),
     }

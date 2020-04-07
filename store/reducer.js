@@ -21,7 +21,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 counter: state.counter + action.val
             }
-        case actionTypes.SUBSTRACT:
+        case actionTypes.SUBTRACT:
             return {
                 ...state,
                 counter: state.counter - action.val
